@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>YBTecno</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Color de la aplicacion -->
+    <meta name="theme-color" content="#1dc8cd"/>
+
+    <!-- Optimizacion para movil -->
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+
+    <!-- Meta etiquetas PWA para Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="apple-touch-startup-image" href="img/favicon.png">
+
+    <!-- Configuarcion General PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Libraries CSS Files -->
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <!-- <link rel="stylesheet" href="css/all.css"> -->
+
+
+      <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+      
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <!-- Mapa-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+
+  </head>
+
+  <body>
+
+    <!--==========================
+      Header
+    ============================-->
+    <header id="header">
+      <div class="container-fluid">
+
+        <!--==========================
+        Nav
+        ============================-->
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active">
+              <a href="#intro">Inicio</a>
+            </li>
+            <li>
+              <a href="#about">Nosotros</a>
+            </li>
+            <li class="menu-has-children">
+              <a href="#features">Servicios</a>
+                <ul>
+                  <li>
+                    <a href="#desarrolloweb">Desarrollo Web</a>
+                  </li>
+                  <li>
+                    <a href="#desarrollomobil">Desarrollo Móviles</a>
+                  </li>
+                  <!--<li>
+                    <a href="#soportetecnico">Soporte Técnico</a>
+                  </li>
+                  <li>
+                    <a href="#ventaequipos">Venta de Equipos</a>
+                  </li>-->
+                </ul>
+            </li>
+            <!--<li><a href="#gallery">Galería</a></li>-->
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro">
+
+      <div class="intro-text">
+        <img src="img/logo/logo18d.png" alt="">
+        <p>Un lugar toda la tecnología</p>
+        <a href="#about" class="btn-get-started scrollto">Ingresar</a>
+      </div>
+
+      <div class="product-screens">
+          <img class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s" src="img/logo/02.png" alt="">
+      </div>
+
+    </section><!-- #intro -->
+
+    <main id="main">
+
+      <!--==========================
+        Nosotros
+      ============================-->
+      <section id="about" class="section-bg">
+        <div class="container-fluid">
+          <div class="section-header">
+            <h3 class="section-title">Acerca Nuestro</h3>
+            <span class="section-divider"></span>
+            <p class="section-description">
+              Somos una empresa en desarrollo. <br>
+            Nos dedicamos al desarrollo web, al desarrollo móvil y soporte técnico.<br>
+              Nos destacamos por la seriedad, compromiso y dedicación con nuestros clientes.
+            </p>
+          </div>
+
+          <section class="programa">
+              <div class="contenedor-video wow fadeInRight">
+                <video class="video" autoplay loop muted poster="img/fondo/bg-talleres.jpg" >
+                  <source src="video/video.mp4" type="video/mp4">
+                  <source src="video/video.webm" type="video/webm">
+                  <source src="video/video.ogv" type="video/ogv">
+                </video>
+              </div> <!-- .contenedor-video -->
+          
+              <div class="contenido-programa">
+                <div class="contenedor">
+                  <div class="programa-evento">
+                      <div class="content wow fadeInLeft">
+                        <h2 class="h2color"><strong><span>Yerba Buena Tecno</span></strong>  te ofrece un excelente servicio, con seriedad y tecnología de vanguardia.</h2>
+                        <h3>Te ofrecemos el mejor precio del mercado.</h3>
+                        <p>
+                          Nuestra empresa se caracteriza por lo siguiente:
+                        </p>
+                        <div class="valores-empresa">
+                        <div class="row">
+                          <div class="col-4">
+                            <ul>
+                              <li><i class="ion-android-checkmark-circle"></i> Seriedad.</li>
+                              <li><i class="ion-android-checkmark-circle"></i> Compromiso.</li>
+                              <li><i class="ion-android-checkmark-circle"></i> Flexibilidad.</li>
+                            </ul>
+                          </div>
+                          <div class="col-4">
+                            <ul>
+                              <li><i class="ion-android-checkmark-circle"></i> Rapidez.</li>
+                              <li><i class="ion-android-checkmark-circle"></i> Soporte 7x24.</li>
+                              <li><i class="ion-android-checkmark-circle"></i> Precio competitivo.</li>
+                            </ul>
+                          </div>
+                          <div class="col-4">
+                              <ul>
+                                <li><i class="ion-android-checkmark-circle"></i> Diseño únicos.</li>
+                                <li><i class="ion-android-checkmark-circle"></i> Desarrollo a medida.</li>
+                                <li><i class="ion-android-checkmark-circle"></i> Web/App Adaptativas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <p>
+                          <strong><span>YBTecno</span></strong> se basa en esos valores, que junto a nuestros clientes llevamos a cabo todos los días para poder mejorar nuestra calidad y servicio.
+                        </p>
+                      </div>
+          
+                  </div><!-- programa-evento -->
+                </div> <!-- contenedor -->
+              </div> <!-- contenido-programa -->
+            </section> <!-- Programa -->
+            
+        </div>
+      </section><!-- #about -->
+
+      <!--==========================
+        Nuestros Servicios
+      ============================-->
+      <section id="features">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-8 offset-lg-4">
+              <div class="section-header wow fadeIn" data-wow-duration="1s">
+                <h3 class="section-title">Nuestros Servicios</h3>
+                <span class="section-divider"></span>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 features-img">
+              <img src="img/nosotros/product-features.jpg" alt="" class="wow fadeInLeft">
+            </div>
+
+            <div class="col-lg-8 col-md-7 ">
+
+              <div class="row">
+
+                <!-- Desarrollo Web -->
+                <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                  <div class="icon">
+                      <a href="#advanced-features" class="scrollto">
+                        <img src="img/iconos/ic_web.png" width="65px" alt="">
+                    </div>
+                  <h4 class="title"><strong>Desarrollo Web</strong></a></h4>
+                  <p class="description"> Responsive Design, Asesoramiento gratuito, Buenas prácticas, Mesa de ayuda, Mejora continua, Consultoría y asesoramiento, Proyectos y soluciones a medida, Obejtivos comunes, Alta en Buscadores Gratis, Hosting y Dominios, Estadísticas web.</p>
+
+                </div><!-- Fin Desarrollo Web -->
+
+                <!-- Desarrollo Mobil -->
+                <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                  <div class="icon">
+                      <a href="#desarrollomobil" class="scrollto">
+                        <img src="img/iconos/ic_mobile.png" width="65px" alt="">
+                  </div>
+                  <h4 class="title"><strong> Desarrollo Móvil </strong> </a></h4>
+                  <p class="description">APP´s Nativas (ANDRIOD - IOS) o WebAPP´s Diseño adaptable, Asesoramiento gratuito, Buenas prácticas, Mesa de ayuda, Mejora continua, Consultoría y asesoramiento, Proyectos y soluciones a medida.</p>
+                </div><!-- Fin Desarrollo Mobil -->
+
+                <!-- Soporte Tecnico -->
+                <!--<div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                  <div class="icon">
+                      <a href="#soportetecnico" class="scrollto">
+                        <img src="img/iconos/ic_soporte.png" width="65px" alt="">
+                  </div>
+                  <h4 class="title"><strong> Soporte Técnico </strong></a></h4>
+                  <p class="description">Presupuesto sin cargo, soporte remoto, soporte software o hardware.</p>
+                </div>-->
+                <!-- Fin Soporte Tecnico -->
+
+                <!-- Venta Equipos -->
+                <!--<div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                  <div class="icon">
+                      <a href="#ventaequipos" class="scrollto">
+                        <img src="img/iconos/ic_equipos02.png" width="65px" alt="">
+                  </div>
+                  <h4 class="title"><strong> Venta de Equipos </strong></a></h4>
+                  <p class="description">Presupuesto sin cargo, notebook, Pc escritorio, All in One, periféricos (Impresoras - Teclados - Etc.).</p>
+                </div>-->
+                <!-- Venta Equipos -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section><!-- #features -->
+
+      <!--==========================
+        Nuestros Servicios Avanzadas
+      ============================-->
+      <section id="advanced-features">
+
+        <!--==========================
+        Desarrollo Web
+        ============================-->
+        <div id="desarrolloweb" class="features-row section-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-right wow fadeInRight" src="img/nosotros/advanced-feature-1.jpg" alt="">
+                <div class="wow fadeInLeft"> 
+                  <h2><strong> Desarrollo Web </strong></h2>
+                  <h3>Nuestro desarrollo web se basa en lo siguiente:</h3>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Responsive Design:</strong>
+                  <p>Nos aseguramos de que tu sitio web se vea bien en cualquier pantalla.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Asesoramiento gratuito:</strong>
+                  <p>Brindamos todo el asesoramiento sin cargo sobre mejoras en el diseño, imágenes, estilos, etc para una mejor interacción del usuario.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Buenas prácticas:</strong>
+                  <p>Utilizamos las buenas prácticas de Desarrollo*, tanto para la experiencia de usuario como el posicionamiento web.</p>
+
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="row">
+                <div class="col-md-6 col-lg-3 wow fadeInLeft">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Mejora continua:</strong>
+                  <p>Nos vamos innovando y mejorando continuamente y con ello tu empresa o negocio también.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeft">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Consultoría y asesoramiento:</strong>
+                  <p>Un asesoramiento especializado representa una gran ventaja competitiva, optimizando sus procesos y aportando herramientas para fortalecer las estrategias de su modelo de negocio.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInRight">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Proyectos a medida:</strong>
+                  <p>Cada organización es única, por lo cual requiere que el desarrollo de una solución también lo sea para adaptarse a las características y necesidades de la misma.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInRight">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Mesa de ayuda:</strong>
+                  <p>La Mesa de ayuda funciona todos los días del año, las 24hs para cualquier consulta que tengas.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-lg-3 wow fadeInLeft">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Obejtivos comunes:</strong>
+                  <p>El objetivo del cliente y el nuestro pasan a ser prioritarios y el mismo.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeft">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Alta en Buscadores Gratis:</strong>
+                  <p>Gestionamos el alta de tu sitio web en Google, Yahoo y Bing, totalmente gratis.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInRight">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Hosting y Dominios:</strong>
+                  <p>Te alojamos la web en hosting de primer nivel, con 99.9% de eficiancia online y los mas rápidos de carga y te ayudamos a adquirir tu propio dominio.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInRight">
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Estadísticas web:</strong>
+                  <p>Podrás conocer la cantidad, los horarios, la procedencia y hasta los navegadores que utilizan los usuarios que ingresan a tu sitio web.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--==========================
+        Desarrollo Móvil
+        ============================-->
+        <div id="desarrollomobil" class="features-row" id="desarrollomobil">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-left wow fadeInLeft" src="img/nosotros/advanced-feature-2.jpg" alt="">
+                <div class="wow fadeInRight">
+                  <h2>Desarrollo Móvil</h2>
+                  <h3>Nuestro desarrollo móvil se basa en lo siguiente:</h3>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> APP´s Nativas (ANDRIOD - IOS) o WebAPP´s:</strong>
+                  <p>Nuestras aplicaciones son desarrolladas en forma nativa para cada app, logrando así el mayor rendimiento tanto en el software, hardware como gráfica de su dispositivo móvil.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Diseño adaptable:</strong>
+                  <p>Nuestras aplicaciones se visualizan de forma correcta tanto para smartphones chicos, medianos y grandes como así tambien en Tablets o Ipads.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Asesoramiento gratuito:</strong>
+                  <p>Brindamos todo el asesoramiento sin cargo sobre mejoras en el diseño, imágenes, estilos, etc para una mejor interacción del usuario.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="wow fadeInRight">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Consultoría y asesoramiento:</strong>
+                    <p>Un asesoramiento especializado representa una gran ventaja competitiva, optimizando sus procesos y aportando herramientas para fortalecer las estrategias de su modelo de negocio.</p>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Proyectos y soluciones a medida:</strong>
+                    <p>Cada organización es única, por lo cual requiere que el desarrollo de una solución también lo sea para adaptarse a las características y necesidades de la misma.</p>
+                  </div>
+    
+                  <div class="col-md-6 col-lg-4">
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Mejora continua:</strong>
+                    <p>Nos vamos innovando y mejorando continuamente y con ello tu empresa o negocio también.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!--==========================
+        Soporte Tecnico
+        ============================-->
+        <!--<div id="soportetecnico" class="features-row section-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-right wow fadeInRight" src="img/nosotros/advanced-feature-4_01.jpg" alt="">
+                <div class="wow fadeInLeft">
+                  <h2>Soporte Técnico</h2>
+                  <h3>Nuestro soporte técnico se basa en lo siguiente:</h3>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Soporte remoto:</strong>
+                  <p>Podemos brindar si el cliente lo desea soporte remoto (no presencial) sobre software del equipo.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Soporte software o hardware:</strong>
+                  <p>Nuestro servicio abarca tanto a la parte del software como de hardware de la Pc.</p>
+
+                  <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Presupuesto sin cargo:</strong>
+                  <p>Brindamos un presupuesto aproximado totalmente sin cargo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+        <!--==========================
+        Venta de Equipos
+        ============================-->
+        <!--<div  id="ventaequipos" class="features-row">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <img class="advanced-feature-img-left wow fadeInLeft" src="img/nosotros/advanced-feature-3.png" alt="">
+                  <div class="wow fadeInRight">
+                    <h2>Venta de Equipos</h2>
+                    <h3>Nuestro servicio de venta de equipos se basa en lo siguiente:</h3>
+    
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Equipos de escritorio:</strong>
+                    <p>Nuestro servicio incluye el asesoramiento para obtener el mejor precio, calidad, rendimiento de lo que ud necesita. Nuestro presupuesto es sin cargo.</p>
+    
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Equipos portátiles:</strong>
+                    <p>Nuestro servicio incluye el asesoramiento para obtener el mejor precio, calidad, rendimiento de lo que ud necesita. Nuestro presupuesto es sin cargo.</p>
+    
+                    <img src="img/ionicons_svg_md-checkmark-circle-outline.svg" width="30px"><strong> Periféricos:</strong>
+                    <p>Nuestro servicio incluye el asesoramiento para obtener el mejor precio, calidad, rendimiento de lo que ud necesita. Nuestro presupuesto es sin cargo.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>-->
+
+      </section><!-- #advanced-features -->
+
+      <!--==========================
+        Nuestros precios
+        ============================-->
+        <!-- Servicio Web -->
+        <section class="precios seccion fondo-precios">
+          <h2 class="nuestros-precios">Nuestros precios</h2>
+          <span class="section-divider"></span>
+          <h2 class="precio-web desarrollo">Desarrollo Web</h2>
+          <div class="contenedor">
+            <ul class="lista-precios clearfix">
+              <!-- Precio 1 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Estandar</h3>
+                  <p class="numero">$4500</p>
+                  <ul>
+                    <li>Hasta 3 páginas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>Certificado de seguridad (SSL)</li>
+                    <li>Video en Youtube o Vimeo</li>
+                    <li>Emprende por un año</li>
+                    <li>Responsive</li>
+                    <li>Administrador de contenido</li>
+                    <li>Autogestionable</li>
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+              <!-- Precio 2 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Avanzado</h3>
+                  <p class="numero">$6000</p>
+                  <ul>
+                    <li>La diseñamos por vos</li>
+                    <li>1 página</li>
+                    <li>6 imágenes precargadas de ilimitadas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>Certificado de seguridad (SSL)</li>
+                    <li>1 video en Youtube o Vimeo precargado de ilimitados</li>
+                    <li>Emprende por un año</li>
+                    <li> 1 cuenta de correo (5G) y disco duro virtual (500MB)</li>
+                    <li>Responsive</li>
+                    <li>Autogestionable</li>
+                    
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+              <!-- Precio 3 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Premium</h3>
+                  <p class="numero">$9000</p>
+                  <ul>
+                    <li>5 páginas (3 precargadas)</li>
+                    <li>12 imágenes precargadas de ilimitadas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>1 video en Youtube o Vimeo precargado de ilimitados</li>
+                    <li>Emprende por un año</li>
+                    <li>3 cuentas de correo (5G) y disco duro virtual (500MB)</li>
+                    <li>Responsive</li>
+                    <li>Autogestionable</li>
+                    
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Servicio Movil -->
+        <section class="precios seccion fondo-precios2">
+          <h2 class="nuestros-precios">Nuestros precios</h2>
+          <span class="section-divider"></span>
+          <h2 class="precio-web desarrollo">Desarrollo Móvil</h2>
+          <div class="contenedor">
+            <ul class="lista-precios clearfix">
+              <!-- Precio 1 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Estandar</h3>
+                  <p class="numero">$4500</p>
+                  <ul>
+                    <li>Hasta 3 páginas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>Certificado de seguridad (SSL)</li>
+                    <li>Video en Youtube o Vimeo</li>
+                    <li>Emprende por un año</li>
+                    <li>Responsive</li>
+                    <li>Administrador de contenido</li>
+                    <li>Autogestionable</li>
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+              <!-- Precio 2 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Avanzado</h3>
+                  <p class="numero">$6000</p>
+                  <ul>
+                    <li>La diseñamos por vos</li>
+                    <li>1 página</li>
+                    <li>6 imágenes precargadas de ilimitadas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>Certificado de seguridad (SSL)</li>
+                    <li>1 video en Youtube o Vimeo precargado de ilimitados</li>
+                    <li>Emprende por un año</li>
+                    <li> 1 cuenta de correo (5G) y disco duro virtual (500MB)</li>
+                    <li>Responsive</li>
+                    <li>Autogestionable</li>
+                    
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+              <!-- Precio 3 -->
+              <li>
+                <div class="tabla-precio">
+                  <h3>Premium</h3>
+                  <p class="numero">$9000</p>
+                  <ul>
+                    <li>5 páginas (3 precargadas)</li>
+                    <li>12 imágenes precargadas de ilimitadas</li>
+                    <li>Vinculación con WhatsApp</li>
+                    <li>1 video en Youtube o Vimeo precargado de ilimitados</li>
+                    <li>Emprende por un año</li>
+                    <li>3 cuentas de correo (5G) y disco duro virtual (500MB)</li>
+                    <li>Responsive</li>
+                    <li>Autogestionable</li>
+                    
+                    <a href="#" class="button hollow">Comprar</a>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <!--==========================
+        Frase de Ford
+      ============================-->
+      <section id="call-to-action">
+        <div class="container">
+          <div class="row wow fadeInUp">
+            <div class="col">
+              <img src="img/fraseFord.jpg" class="mx-auto d-block img-fluid rounded" alt="">
+            </div>
+          </div>
+
+        </div>
+      </section><!-- #call-to-action -->
+
+      <!--==========================
+        Clientes
+      ============================-->
+      <section id="clients">
+        <div class="container">
+
+          <div class="row wow fadeInUp">
+
+            <div class="col-md-2">
+              <img class="mx-auto d-block" src="img/clients/client-1.png" alt="">
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://play.google.com/store/apps/details?id=trc.ybtecno.com.trc" target="_blank"><img class="mx-auto d-block" src="img/clients/client-2.png" alt=""></a>
+            </div>
+            
+            <div class="col-md-2">
+              <img class="mx-auto d-block" src="img/clients/client-4.png" alt="">
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://play.google.com/store/apps/details?id=ybtecno.com.jockeyclubdetucuman" target="_blank"><img class="mx-auto d-block" src="img/clients/client-3.png" alt=""></a>
+            </div>
+
+            <div class="col-md-2">
+              <img class="mx-auto d-block" src="img/clients/client-5.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section><!-- #more-features -->
+
+      <!--==========================
+        Mapa
+      ============================-->
+      <!--<div class="mapa" id="mapa">
+
+      </div>--><!-- mapa -->
+
+      <!--==========================
+        Seccion Contacto
+      ============================-->
+      <section id="contact">
+        <div class="container">
+          <div class="row wow fadeInUp">
+
+            <div class="col-lg-4 col-md-4">
+              <div class="contact-about">
+                <h3>YBTecno</h3>
+                <p>Nos podés contactar o seguir por nuestras redes sociales.</p>
+                <div class="social-links">
+                  <a href="https://twitter.com/YBTecno" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/YBTecno-1567154450210688/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="https://plus.google.com/u/0/104692326831525869610" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div>
+                  <i class="ion-ios-location-outline"></i>
+                  <p>Yerba Buena<br>Tucumán, Argentina</p>
+                </div>
+
+                <div>
+                  <i class="ion-ios-email-outline"></i>
+                  <p>ybtecno@gmail.com</p>
+                </div>
+
+                <div>
+                  <i class="ion-ios-telephone-outline"></i>
+                  <p>+54 3816807500</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <div id="sendmessage">Su mensaje fue enviado.</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Su correo" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center"><button type="submit" title="Send Message">Enviar Mensaje</button></div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- #contact -->
+
+    </main>
+
+    <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-lg-left text-center">
+            <div class="copyright">
+              &copy; Copyright Todos los derechos reservados.
+            </div>
+            
+          </div>
+          <div class="col-lg-6">
+            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+              <a href="#intro" class="scrollto">Inicio</a>
+              <a href="#about" class="scrollto">Nosotros</a>
+              <a href="html/politicasPrivacidad.html">Políticas Privacidad</a>
+              <a href="html/terminosUso.html">Términos de uso</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="credits"></div>
+      <p class="copyright"> 
+              Desarrollado por <a href="#intro" class="btn-get-started scrollto">YBTecno</a>
+      </p>
+    </div>
+    </footer><!-- #footer -->
+
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+
+    <a href="https://api.whatsapp.com/send?phone=543816807500&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cotizador.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  </body>
+</html>
