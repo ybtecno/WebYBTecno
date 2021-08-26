@@ -1836,11 +1836,6 @@ div.tabla-precio ul li.no:before {
   transition: all .3s ease;
   border: 2px solid #fe4918;
 }
-.tabla-precio .button:hover {
-  color: #fe4918;
-  background-color: white;
-}
-
 div.tabla-precio:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

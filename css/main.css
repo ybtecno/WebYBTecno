@@ -406,8 +406,9 @@ div.contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
 }
+/* 1 sacar marcado */
 div.contenido-programa {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   height: 100%;
@@ -426,12 +427,31 @@ div.programa-evento {
 
 @media only screen and (min-width:992px) {
     div.programa-evento {
-        width: 50%;
+      /* 2 estaba en 50% */
+        width: 100%;
     }
+}
+/* 3 se agrego todo */
+.programa-evento h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1dc8cd;
+    margin-bottom: 0px;
+}
+/* 4 se agrego todo */
+span.section-divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1dc8cd;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1dc8cd), to(#55fabe));
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 nav.menu-programa {
   width: 100%;
-  
 }
 @media only screen and (min-width:768px) {
     nav.menu-programa {
@@ -593,13 +613,23 @@ ul.lista-precios > li {
         width: 33.3%;
   }
 }
-
-div.tabla-precio {
+/* 6 se saco todo */
+/* div.tabla-precio {
   border: 1px solid #e1e1e1;
   background-color: #ffffff;
   padding: 40px 0;
   text-align: center;
   transition: all .3s ease;
+} */
+
+/* 5 se agrego todo */
+div.tabla-precio {
+  border: 1px solid orangered;
+  padding: 40px 40px 40px 20px;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #ffffff;
 }
 div.tabla-precio:hover {
   transform: scale(1.1);
@@ -633,6 +663,12 @@ div.tabla-precio p.numero {
   color: #000000;
   margin: 20px 0;
 }
+.tabla-precio .button:hover {
+  color: #fe4918;
+  background-color: white;
+}
+
+
 
 /**+ MAPA   **/
 
