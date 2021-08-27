@@ -153,20 +153,7 @@ h3 {
   font-family: 'PT Sans', sans-serif;
   margin: 0;
 }
-.button {
-  background-color: #fe4918;
-  padding: 10px 40px;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-   font-family: 'Oswald', sans-serif;
-   text-decoration: none;
-   font-size: 1em;
-   margin-top: 20px;
-   display: inline-block;
-   transition: all .3s ease;
-   border: 2px solid #fe4918;
-}
+
 .button.hollow,
 .button.hollow:hover {
   background-color: white;
@@ -185,9 +172,7 @@ ul {
   margin:0;
   padding: 0;
 }
-.button:hover {
-  background-color: #e33000;
-}
+
 .float-right {
   float: right;
 }
@@ -408,7 +393,7 @@ div.contenedor-video {
 }
 /* 1 sacar marcado */
 div.contenido-programa {
-  /* position: absolute; */
+  
   top: 0;
   left: 0;
   height: 100%;
@@ -613,14 +598,6 @@ ul.lista-precios > li {
         width: 33.3%;
   }
 }
-/* 6 se saco todo */
-/* div.tabla-precio {
-  border: 1px solid #e1e1e1;
-  background-color: #ffffff;
-  padding: 40px 0;
-  text-align: center;
-  transition: all .3s ease;
-} */
 
 /* 5 se agrego todo */
 div.tabla-precio {
@@ -636,14 +613,7 @@ div.tabla-precio:hover {
   border: 1px solid #fe4918;
   box-shadow: 0px 0px 50px #666;
 }
-div.tabla-precio ul li {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #868686;
-    line-height: 26px;
-}
+
 div.tabla-precio ul li:before {
   font-family: 'FontAwesome';
   display: inline-block;
@@ -654,21 +624,6 @@ div.tabla-precio ul li:before {
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
 }
-div.tabla-precio h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size:16px;
-  text-transform: uppercase;
-}
-div.tabla-precio p.numero {
-  color: #000000;
-  margin: 20px 0;
-}
-.tabla-precio .button:hover {
-  color: #fe4918;
-  background-color: white;
-}
-
-
 
 /**+ MAPA   **/
 

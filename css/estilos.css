@@ -787,7 +787,7 @@ div.contenedor-video {
   overflow: hidden;
 }
 
-div.contenido-programa {
+div.contenido-programa-planes {
   position: relative;
   top: 0;
   left: 0;
@@ -820,7 +820,7 @@ div.programa-evento-planes .planes {
 
 @media only screen and (min-width: 992px) {
   div.programa-evento {
-    width: 55%;
+    width: 10%;
   }
 }
 
@@ -834,11 +834,11 @@ div.contenedor-video {
   overflow-x: hidden;
 }
 div.contenido-programa {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
 }
 div.programa-evento {
   background-color: rgba(255, 255, 255, .8);
@@ -853,8 +853,25 @@ div.programa-evento {
 
 @media only screen and (min-width:992px) {
     div.programa-evento {
-        width: 50%;
+        width: 100%;
     }
+}
+.programa-evento h2{
+  font-size: 25px;
+  text-align: center;
+  /* font-weight: bold; */
+  color: #1dc8cd;
+  margin-bottom: 20px;
+}
+span.section-divider {
+display: block;
+width: 60px;
+height: 3px;
+background: #1dc8cd;
+background: -webkit-gradient(linear, left bottom, left top, from(#1dc8cd), to(#55fabe));
+background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+margin: 0 auto;
+margin-bottom: 20px;
 }
 ul.menu-programa {
   width: 100%;
@@ -1211,6 +1228,8 @@ div.detalle-evento p {
           box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
   overflow: hidden;
+  /* margin-top: 50px; */
+  background-color: #e2e2e2;
 }
 
 #contact .contact-about h3 {
@@ -1246,7 +1265,7 @@ div.detalle-evento p {
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
-  color: #888;
+  color: black;
 }
 
 #contact .social-links {
@@ -1290,6 +1309,7 @@ div.detalle-evento p {
   padding: 0 0 10px 42px;
   line-height: 28px;
   font-size: 14px;
+  color: black;
 }
 
 #contact .form #sendmessage {
@@ -1724,6 +1744,14 @@ ul.lista-precios > li {
   }
 }
 
+/* div.tabla-precio {
+  border: 1px solid orangered;
+  padding: 40px 40px 40px 20px;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #ffffff;
+} */
 div.tabla-precio {
   border: 1px solid orangered;
   padding: 40px 40px 40px 20px;
@@ -1738,27 +1766,35 @@ div.tabla-precio ul li {
   font-size: 14px;
   text-transform: uppercase;
   color: #868686;
-  line-height: 26px;
+  line-height: 40px;
 }
 
 div.tabla-precio h3 {
   font-size: 40px;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #1dc9ce;
   font-weight: bold;
 }
 div.tabla-precio h2 {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 div.tabla-precio p.numero {
   color: #fe4918;
-  margin-top: 20px;
+  margin: 10px;
   font-weight: bold;
   font-size: 30px;
   /* text-shadow: 2px 2px 3px #fe4918; */
   /* text-shadow: 0 0 3px #fe4918; */
+}
+div.tabla-precio p.aBk {
+  font-size: 14px;
+    cursor: pointer;
+    color: #0099ff;
+    margin-top: 20px;
 }
 
 h2.nuestros-precios {
@@ -1795,9 +1831,12 @@ span.section-divider {
 }
 
 div.tabla-precio ul li {
-  text-align: left;
-  margin-left: 30px;
-  padding: 0 0 10px 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 30px;
+    text-align: left;
 }
 
 div.tabla-precio ul li:before {
@@ -1842,6 +1881,10 @@ div.tabla-precio:hover {
   border: 1px solid #fe4918;
   -webkit-box-shadow: 0px 0px 50px #666;
           box-shadow: 0px 0px 50px #666;
+}
+.tabla-precio .button:hover {
+  color: #fe4918;
+  background-color: white;
 }
 
 /* Precios Móvil */
