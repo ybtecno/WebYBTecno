@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Yerba Buena Tecno</title>
+    <title>Yerba Buena Tecno | Pruebas</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -34,6 +34,239 @@
     <link rel="stylesheet" href="../css/colorbox.css">
     <link href="../css/estilos.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+
+    <style>
+        /* body {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  height: calc(100vh - 86px);
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+} */
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.center ul li {
+  color: white;
+  list-style: none;
+  font-size: 6em;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-shadow: 1px 15px 16px #00000042;
+  -webkit-text-stroke: 1px #000000;
+}
+.center ul li:nth-child(1) {
+  color: #ff337f;
+}
+
+.center ul li:nth-child(2) {
+  color: #fc49fe;
+}
+
+.center ul li:nth-child(3) {
+  color: #ff6eff;
+}
+
+.center ul li:nth-child(4) {
+  color: #c07dfe;
+}
+
+.center ul li:nth-child(5) {
+  color: #04aeff;
+}
+
+.center ul:hover li {
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+    color: white;
+  }
+}
+
+.center ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.center ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.center ul li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.center ul li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.center ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+    </style>
+
+<style>
+    body{
+  margin:0;
+  padding:0;
+  background-color:#fafafa;
+}
+
+.header-blog .container {
+  position: relative;
+  height: 100%;
+}
+
+.header-blog, .stats, footer, .video, .call-to-action {
+  background-image: url("https://3.bp.blogspot.com/-04vqcpHNiuo/W0x2THLFZXI/AAAAAAAAOl8/DUvOAykZU9Q0rVaRw4nFTWQM-d8__k-agCLcBGAs/s1600/dresscounter.jpg");
+}
+
+.header-blog {
+  height: 60vh;
+  padding-top: 100px;
+  margin-top:70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(5, 16, 44, .15);
+  box-shadow: 0 15px 30px 0 rgba(5, 16, 44, .15);
+}
+
+
+.bg-animation {
+  -webkit-animation: bg-animation 25s ease-in-out infinite;
+  animation: bg-animation 25s ease-in-out infinite;
+}
+
+
+header{
+  display:block;
+}
+
+.header-blog .container {
+  position: relative;
+  height: 100%;
+}
+
+.header-row {
+  height: 100%;
+}
+
+.white {
+  color: #F7F8FC;
+}
+.h1, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.white-link {
+  font-weight: bold;
+  opacity: .7;
+  color: #F7F8FC;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+
+.white-link:hover {
+  opacity: 1;
+  color: #F7F8FC;
+}
+
+/*****animated text start*****/
+h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  margin:0;
+  padding:0;
+  letter-spacing: 5px;
+  color:transparent;
+}
+
+h1:before{
+  content: attr(data-text);
+  position:absolute;
+  top: 0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  color:#FFF;
+  overflow: hidden;
+  border-right: 1px solid #FFF;
+  animation: type 10s steps(18) infinite;
+  white-space:nowrap;
+}
+
+@keyframes type {
+  
+  0%{
+    width:0%;
+  }
+  
+  50%{
+    width:100%;
+    
+  }
+  
+  100%{
+    width:0%;
+  }
+  
+}
+/*****animated text End*****/
+
+
+
+@-webkit-keyframes bg-animation {
+    0% {
+        background-position: top;
+    }
+
+    50% {
+        background-position: bottom;
+    }
+    100% {
+        background-position: top;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: top;
+    }
+
+    50% {
+        background-position: bottom;
+    }
+    100% {
+        background-position: top;
+    }
+}
+</style>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
@@ -81,6 +314,7 @@
             <li><a href="../#contact">Contacto</a></li>
           </ul>
         </nav><!-- #nav-menu-container -->
+        
       </div>
     </header><!-- #header -->
 
@@ -89,7 +323,7 @@
   ============================-->
   <section id="introPP">
 
-    <div class="intro-text">
+    <div class="intro-text">  
       <img src="../img/logo/logo18d.png" alt="">
       <p>Un lugar toda la tecnología</p>
     </div>
@@ -98,315 +332,33 @@
   <!--==========================
       Portfolio Section
     ============================-->
-    <section class="programa">
-        <!-- <div class="contenedor-video">
-            <video autoplay loop poster="../img/fondo/encabezado.jpg">
-                <source src="../video/video.mp4" type="video/mp4">
-                <source src="../video/video.webm" type="video/webm">
-                <source src="../video/video.ogv" type="video/ogg">
-            </video>
-        </div> -->
-        <!--.contenedor-video-->
-        <div class="contenido-programa">
-            <div class="contenedor">
-                <div class="programa-evento">
-                    <h2 class="nuestrosPlanes">Nuestros planes</h2>
-                    <span class="section-divider"></span>
-
-                    <!-- Menu precios -->
-                    <nav class="menu-programa">
-                        <a href="#desarrolloWeb">
-                            <i class="fa fa-file-text-o" aria-hidden="true"></i>Desarrollo Web</a>
-                        <a href="#hostingDominio">
-                            <i class="fa fa-server" aria-hidden="true"></i>Hosting & Dominio</a>
-                        <a href="#desarrolloMovil">
-                            <i class="fa fa-mobile" aria-hidden="true"></i>Desarrollo Móvil</a>
-                        <a href="#STVentas">
-                            <i class="fa fa-desktop" aria-hidden="true"></i>Servicio técnico & Venta de equipos</a>
-                    </nav>
-
-                    <section class="precios seccion">
-                        <div class="contenedor">
-                          <!-- Desarrollo web -->
-                          <ul id="desarrolloWeb" class="lista-precios ocultar clearfix">
-                            <!-- Desarrollo Web Estandar-->  
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Estandar</h3>
-                                    <p class="numero">$4500</p>
-                                    <ul>
-                                        <li>Hasta 3 páginas</li>
-                                        <li>Vinculación con Whatsapp</li>
-                                        <li>Video en Youtube</li>
-                                        <li>Responsive</li>
-                                        <li>Administración de contenido</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Desarrollo Web Avanzado-->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Avanzado</h3>
-                                    <p class="numero">$6000</p>
-                                    <ul>
-                                        <li>La diseñamos por vos</li>
-                                        <li>3 páginas</li>
-                                        <li>6 Imágenes precargadas</li>
-                                        <li>Vinculación con whatsapp</li>
-                                        <li>Certificado de seguridad (SSL)</li>
-                                        <li>1 Video en Youtube</li>
-                                        <li>1 cuenta de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Desarrollo Web Premium-->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Premium</h3>
-                                    <p class="numero">$9000</p>
-                                    <ul>
-                                        <li>5 páginas (3 precargadas)</li>
-                                        <li>12 imágenes precargadas de ilimitadas</li>
-                                        <li>1 video de Youtube</li>
-                                        <li>3 cuentas de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-                          </ul>
-              
-                          <!-- Hosting & Dominio -->
-                          <ul id="hostingDominio" class="lista-precios ocultar clearfix">
-                            <!-- Servicio Hosting & Dominio Lite-->  
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Lite</h3>
-                                    <h2>Tu web personal</h2>
-                                    <p class="numero">$120 /mes</p>
-                                    <ul>
-                                        <li>5GB de almacenamiento SSD</li>
-                                        <li>1 Base de datos</li>
-                                        <li>Ancho de banda sin medición</li>
-                                        <li>WordPress a un click</li>
-                                        <li>Optimizado para WordPress</li>
-                                        <li class="no">Cuentas de correo</li>
-                                        <li class="no">Constructor de sitio</li>
-                                        <li class="no">Certificado SSLinfo</li>
-                                        <li class="no">Dominioinfo</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Servicio Hosting & Dominio Plus -->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Plus</h3>
-                                    <h2>Crece con tu proyecto</h2>
-                                    <p class="numero">$300 /mes</p>
-                                    <ul>
-                                      <li>60GB de almacenamiento SSD</li>
-                                      <li>5 Bases de datos</li>
-                                      <li>Ancho de banda sin medición</li>
-                                      <li>WordPress a un click</li>
-                                      <li>Optimizado para WordPress</li>
-                                      <li>20 Cuentas de correo</li>
-                                      <li>Constructor de sitio</li>
-                                      <li>Certificado SSL</li>
-                                      <li class="no">Dominio</li>
-              
-                                  </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Servicio Hosting & Dominio Full-->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Full</h3>
-                                    <h2>Expande tu negocio</h2>
-                                    <p class="numero">$360</p>
-                                    <ul>
-                                        <li>100GB de almacenamiento SSD</li>
-                                        <li>30 Bases de datos</li>
-                                        <li>Ancho de banda sin medición</li>
-                                        <li>WordPress a un click</li>
-                                        <li>Optimizado para WordPress</li>
-                                        <li>Cuentas de correo ILIMITADAS</li>
-                                        <li>Constructor de sitio</li>
-                                        <li>Certificado SSL</li>
-                                        <li>Dominio</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-                          </ul>
-              
-                          <!-- Desarrollo Movil -->
-                          <ul id="desarrolloMovil" class="lista-precios ocultar clearfix">
-                            <!-- Desarrollo Movil Estandar-->  
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Estandar</h3>
-                                    <p class="numero">$4500</p>
-                                    <ul>
-                                        <li>Hasta 3 páginas</li>
-                                        <li>Vinculación con Whatsapp</li>
-                                        <li>Video en Youtube</li>
-                                        <li>Responsive</li>
-                                        <li>Administración de contenido</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Desarrollo Movil Avanzado-->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Avanzado</h3>
-                                    <p class="numero">$6000</p>
-                                    <ul>
-                                        <li>La diseñamos por vos</li>
-                                        <li>3 páginas</li>
-                                        <li>6 Imágenes precargadas</li>
-                                        <li>Vinculación con whatsapp</li>
-                                        <li>Certificado de seguridad (SSL)</li>
-                                        <li>1 Video en Youtube</li>
-                                        <li>1 cuenta de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Desarrollo Movil Premium-->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Premium</h3>
-                                    <p class="numero">$9000</p>
-                                    <ul>
-                                        <li>5 páginas (3 precargadas)</li>
-                                        <li>12 imágenes precargadas de ilimitadas</li>
-                                        <li>1 video de Youtube</li>
-                                        <li>3 cuentas de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-                          </ul>
-
-                          <!-- Servicio técnico & Venta de equipos  -->
-                          <ul id="STVentas" class="lista-precios ocultar clearfix">
-                            <!-- Servicio técnico & Venta de equipos -->  
-                            <li>
-                                <div class="tabla-precio wow">
-                                    <h3>Estandar</h3>
-                                    <p class="numero">$4500</p>
-                                    <ul>
-                                        <li>Hasta 3 páginas</li>
-                                        <li>Vinculación con Whatsapp</li>
-                                        <li>Video en Youtube</li>
-                                        <li>Responsive</li>
-                                        <li>Administración de contenido</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Servicio técnico & Venta de equipos -->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Avanzado</h3>
-                                    <p class="numero">$6000</p>
-                                    <ul>
-                                        <li>La diseñamos por vos</li>
-                                        <li>3 páginas</li>
-                                        <li>6 Imágenes precargadas</li>
-                                        <li>Vinculación con whatsapp</li>
-                                        <li>Certificado de seguridad (SSL)</li>
-                                        <li>1 Video en Youtube</li>
-                                        <li>1 cuenta de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
-                            </li>
-              
-                            <!-- Servicio técnico & Venta de equipos -->
-                            <li>
-                              <div class="tabla-precio wow">
-                                    <h3>Premium</h3>
-                                    <p class="numero">$9000</p>
-                                    <ul>
-                                        <li>5 páginas (3 precargadas)</li>
-                                        <li>12 imágenes precargadas de ilimitadas</li>
-                                        <li>1 video de Youtube</li>
-                                        <li>3 cuentas de correo</li>
-                                        <li>Responsive</li>
-                                        <li>Autogestionable</li>
-                                    </ul>
-                                    <a href="#" class="button hollow">Comprar</a>
-                                </div>
-                            </li>
-                          </ul>
-              
-                        </div>
-                      </section>
-
-                </div>
-                <!--.programa-evento-->
+    <div class="center">
+        <ul>
+          <li>Yerba</li>
+          <li>Buena</li>
+           <li>T</li>
+           <li>e</li>
+           <li>c</li>
+           <li>n</li>
+           <li>o</li>
+        </ul>
+      </div>
+    <header class="header-blog bg-animation">
+        <div class="container">
+            <div class="row header-row">
+                <!-- Main title -->
+                
+                  <!--typing text strt----> 
+                    <h1 data-text="Yerba Buena Tecno">Yerba Buena Tecno</h1>
+                   <!--typing text End----> 
+                <!-- Main title end -->
             </div>
-            <!--.contenedor-->
         </div>
-        <!--.contenido-programa-->
-    </section><!--.programa-->
+    </header>
+    
     
 
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>YBTecno</strong> Todos los derechos reservados.
-          </div>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-            -->
-            Desarrollado por <a href="#">YBTecno</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="../index.html" class="scrollto">Página Principal</a>
-            <a href="#">Políticas Privacidad</a>
-            <a href="terminosUso.html">Términos de uso</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </footer><!-- #footer -->
+
 
   <!-- Boton Back to top -->
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -415,6 +367,12 @@
   <a href="https://api.whatsapp.com/send?phone=543816807500&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
   </a>
+
+  
+    <!-- Desabilitar boton derecho -->
+    <!-- <script>
+        document.oncontextmenu = function(){return false}
+    </script> -->
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
