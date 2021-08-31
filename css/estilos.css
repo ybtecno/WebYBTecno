@@ -863,6 +863,22 @@ div.programa-evento {
   color: #1dc8cd;
   margin-bottom: 20px;
 }
+
+div.programa-evento p.p-planes {
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  
+}
+
+div.programa-evento p span{
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
 span.section-divider {
 display: block;
 width: 60px;
@@ -1780,6 +1796,8 @@ div.tabla-precio h2 {
   color: black;
   font-size: 20px;
   margin-top: 20px;
+  text-transform: none;
+  font-weight: normal;
 }
 
 div.tabla-precio p.numero {
