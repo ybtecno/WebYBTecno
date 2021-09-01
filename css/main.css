@@ -53,14 +53,14 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
+/* audio,
 canvas,
 iframe,
 img,
 svg,
 video {
     vertical-align: middle;
-}
+} */
 
 /*
  * Remove default fieldset styles.
@@ -98,47 +98,47 @@ textarea {
 html {
   box-sizing: border-box;
 }
-*,*:before,*:after {
+/* *,*:before,*:after {
   box-sizing: inherit;
-}
+} */
 body {
   background-color: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
 /** Globales **/
-.contenedor {
+/* .contenedor {
   width: 98%;
   margin:0 auto;
-}
-@media only screen and (min-width:480px) {
+} */
+/* @media only screen and (min-width:480px) {
   .contenedor {
     width: 95%;
   }
-}
-@media only screen and (min-width:768px) {
+} */
+/* @media only screen and (min-width:768px) {
   .contenedor {
     width: 90%;
   }
-}
-@media only screen and (min-width:992px) {
+} */
+/* @media only screen and (min-width:992px) {
   .contenedor {
     width: 90%;
     max-width: 1100px;
   }
-}
-.seccion {
+} */
+/* .seccion {
   padding: 30px 0;
-}
+} */
 .seccion p {
   font-size: 1.2em;
   text-align: center;
 }
-h2 {
+/* h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.4em;
     text-transform: uppercase;
     text-align: center;
-}
+} */
 h2::after {
   content: '';
   margin: 0 auto;
@@ -147,12 +147,12 @@ h2::after {
   width: 100px;
   display: block;
 }
-h3 {
+/* h3 {
   font-size: 1.8em;
   color: #fe4918;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
-}
+} */
 
 .button.hollow,
 .button.hollow:hover {
@@ -167,11 +167,11 @@ h3 {
   border: 2px solid #fe4918;
 }
 
-ul {
+/* ul {
   list-style: none;
   margin:0;
   padding: 0;
-}
+} */
 
 .float-right {
   float: right;
@@ -384,48 +384,47 @@ div.menu-movil span{
 }
 
 /** Talleres **/
-section.programa {
+/* section.programa {
   position: relative;
-}
-div.contenedor-video {
+} */
+/* div.contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 /* 1 sacar marcado */
-div.contenido-programa {
-  
+/* div.contenido-programa {
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-}
-div.programa-evento {
+} */
+/* div.programa-evento {
   background-color: rgba(255, 255, 255, .8);
   padding: 15px;
   margin-top: 80px;
-}
-@media only screen and (min-width:768px) {
+} */
+/* @media only screen and (min-width:768px) {
     div.programa-evento {
         width: 70%;
     }
-}
+} */
 
-@media only screen and (min-width:992px) {
+/* @media only screen and (min-width:992px) {
     div.programa-evento {
-      /* 2 estaba en 50% */
-        width: 100%;
+      
+        width: 50%;
     }
-}
+} */
 /* 3 se agrego todo */
-.programa-evento h2{
+/* .programa-evento h2{
     font-size: 40px;
     text-align: center;
     font-weight: bold;
     color: #1dc8cd;
     margin-bottom: 0px;
-}
+} */
 /* 4 se agrego todo */
-span.section-divider {
+/* span.section-divider {
   display: block;
   width: 60px;
   height: 3px;
@@ -434,7 +433,7 @@ span.section-divider {
   background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
   margin: 0 auto;
   margin-bottom: 20px;
-}
+} */
 nav.menu-programa {
   width: 100%;
 }
@@ -589,15 +588,15 @@ p.numero {
   font-family: 'Oswald', sans-serif;
 }
 /** Tabla de Precios **/
-ul.lista-precios > li {
+/* ul.lista-precios > li {
   padding: 10px;
-}
-@media only screen and (min-width:768px){
+} */
+/* @media only screen and (min-width:768px){
   ul.lista-precios > li {
         float: left;
         width: 33.3%;
   }
-}
+} */
 
 /* 5 se agrego todo */
 div.tabla-precio {

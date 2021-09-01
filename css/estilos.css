@@ -158,7 +158,9 @@ body {
     max-width: 1100px;
   }
 }
-
+.seccion {
+  padding: 30px 0;
+}
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -349,7 +351,11 @@ body {
   color: white;
   background: #1dc8cd;
 }
-
+@media (max-width: 768px) {
+  #intro .btn-get-started {
+    font-size: 15px;
+  }
+}
 #intro .btn-get-started:hover {
   color: #1dc8cd;
   background: white;
@@ -661,6 +667,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #777;
   font-style: italic;
 }
+@media (max-width: 768px) {
+  .section-header p.section-description {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+  }
 
 .section-header .section-divider {
   display: block;
@@ -719,12 +732,15 @@ antiquewhite
 #about .h2color span {
   color: #1dc8cd;
 }
-
+#about h2 {
+  margin-top: 20px;
+}
 @media (max-width: 768px) {
-  #about .h2color {
+  #about h2 {
     text-align: center;
-    margin-top: -100px;
-    font-size: 22px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #1dc8cd;
   }
 }
 
@@ -735,12 +751,17 @@ antiquewhite
   line-height: 26px;
   font-style: italic;
   text-align: center;
+  margin-top: 30px;
 }
 
 #about .content p {
   line-height: 26px;
 }
-
+@media (max-width: 768px) {
+  #about .content p {
+    font-size: 14px;
+  }
+}
 #about .content p:last-child {
   margin-bottom: 0;
 }
@@ -771,7 +792,7 @@ antiquewhite
 
 @media (max-width: 768px) {
   #about .content ul li {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
@@ -786,21 +807,25 @@ div.contenedor-video {
   max-width: 100%;
   overflow: hidden;
 }
-
+@media (max-width: 768px) {
+  div.contenedor-video .video{
+    max-height: 600px;
+  }
+}
 div.contenido-programa-planes {
   position: relative;
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 98%;
 }
 
-div.programa-evento {
+/* div.programa-evento {
   background-color: #eff5f5;
   padding: 15px;
   margin-top: 100px;
-  /* text-align: center; */
-}
+  text-align: center;
+} */
 div.programa-evento-planes .planes {
   font-size: 40px;
   text-align: center;
@@ -810,58 +835,68 @@ div.programa-evento-planes .planes {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenido-programa .contenedor {
-    width: 95%;
-  }
+  
   div.programa-evento {
-    width: 95%;
+    width: 50%;
   }
 }
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   div.programa-evento {
     width: 10%;
   }
-}
+} */
 
 /**********************/
 /** Talleres **/
-section.programa {
+/* section.programa {
   position: relative;
-}
-div.contenedor-video {
+} */
+/* div.contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 div.contenido-programa {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 50%;
+  width: 98%;
 }
+
 div.programa-evento {
   background-color: rgba(255, 255, 255, .8);
-  padding: 15px;
-  margin-top: 80px;
 }
-@media only screen and (min-width:768px) {
+.contenido-programa-planes .contenedor .planes {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* @media only screen and (min-width:768px) {
+    div.programa-evento {
+        width: 98%;
+    }
+} */
+
+/* @media only screen and (min-width:992px) {
     div.programa-evento {
         width: 70%;
     }
-}
-
-@media only screen and (min-width:992px) {
-    div.programa-evento {
-        width: 100%;
-    }
-}
+} */
 .programa-evento h2{
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
-  /* font-weight: bold; */
   color: #1dc8cd;
-  margin-bottom: 20px;
+}
+div.planes h2 {
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .programa-evento h2 {
+    margin: 10px 0 -10px 0;
+    font-size: 25px;
+  }
 }
 
 div.programa-evento p.p-planes {
@@ -870,9 +905,13 @@ div.programa-evento p.p-planes {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  
 }
-
+@media (max-width: 768px) {
+  div.programa-evento p.p-planes {
+    font-size: 14px;
+    width: 90%;
+  }
+}
 div.programa-evento p span{
   font-weight: bold;
   color: black;
@@ -961,7 +1000,11 @@ div.detalle-evento p {
   padding: 60px 0 0 0;
   overflow: hidden;
 }
-
+@media (max-width: 768px) {
+  #features {
+    padding: 0;
+  }
+}
 #features .features-img {
   text-align: center;
   padding-top: 20px;
@@ -1174,6 +1217,12 @@ div.detalle-evento p {
   padding: 30px 0;
   background: white;
   overflow: hidden;
+}
+#clients .section-title {
+  font-size: 32px;
+  color: #1dc8cd;
+  text-align: center;
+  font-weight: bold;
 }
 
 #clients img {
@@ -1554,6 +1603,11 @@ p.copyright {
   line-height: 56px;
   width: 55%;
 }
+@media (max-width: 768px) {
+  #introPP img {
+    width: 90%;
+  }
+}
 
 @media (max-width: 768px) {
   #introPP h2 {
@@ -1637,6 +1691,11 @@ body {
 .contenedor {
   max-width: 100%;
   margin: 40px auto;
+}
+@media only screen and (max-width:768px) {
+  .contenedor {
+    margin: 0 auto;
+  }
 }
 
 .formulario .contenedor-inputs {
@@ -1751,6 +1810,10 @@ ul {
 ul.lista-precios > li {
   padding: 10px;
   list-style: none;
+}
+
+ul.lista-precios li h3.desarrolloMovil{
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
