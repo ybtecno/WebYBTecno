@@ -928,13 +928,58 @@ background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
 margin: 0 auto;
 margin-bottom: 20px;
 }
+
+nav.menu-programa {
+  width: 100%;
+}
+@media only screen and (min-width:768px) {
+    nav.menu-programa {
+        display: table;
+    }
+}
+nav.menu-programa a {
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fe4918;
+}
+nav.menu-programa a.activo::after {
+  position: absolute;
+  content: '';
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 30px;
+  background-image: url('../img/talleres-flecha.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: -20px;
+}
+@media only screen and (min-width:768px) {
+    nav.menu-programa a {
+      display: table-cell;
+    }
+}
+nav.menu-programa a i,
+div.detalle-evento p i {
+  color: #fe4918;
+  font-size: 1.6em;
+  margin-right: 10px;
+}
 ul.menu-programa {
   width: 100%;
   
 }
 @media only screen and (min-width:768px) {
     ul.menu-programa {
-      /* display: flex; */
       padding: 0;
       margin: 5px 0 35px 0;
       list-style: none;
@@ -976,6 +1021,7 @@ div.detalle-evento p i {
   font-size: 1.6em;
   margin-right: 10px;
 }
+
 div.ocultar {
   display: none;
 }
@@ -1231,59 +1277,48 @@ div.detalle-evento p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 15px 0;
+  border-radius: 50%;
 }
 
 #clients img:hover {
   opacity: 1;
 }
 
-/* Galeria
-  --------------------------------*/
-#gallery {
-  background: white;
-  padding: 60px 0 0 0;
-  overflow: hidden;
+/*** Newsletter:   **/
+div.newsletter {
+  position: relative;
+  height: auto;
+}
+div.newsletter::before {
+  background-image: url(../img/fondo/bg-newsletter.jpg);
+  content: '';
+}
+div.newsletter .contenido {
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+div.newsletter .contenido p {
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+div.newsletter .contenido h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Oswald', sans-serif, Comic;
 }
 
-#gallery .container-fluid {
-  padding: 0px;
-}
-
-#gallery .gallery-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.parallax::before {
   width: 100%;
   height: 100%;
-  opacity: 1;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-#gallery .gallery-item {
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#gallery .gallery-item img {
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-  width: 100%;
-}
-
-#gallery .gallery-item:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#gallery .gallery-item:hover .gallery-overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Seccion Contacto
@@ -1639,43 +1674,7 @@ div.mapa {
   height: 420px;
 }
 
-/*--------------------------------------------------------------
-  # Variables
-  --------------------------------------------------------------*/
-/** Colores **/
-/** Fuentes **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/** Fuentes **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/*====================================================*/
-/** Colores **/
-/* Contacto */
+
 * {
   margin: 0;
   padding: 0;
@@ -1793,14 +1792,19 @@ body {
 }
 
 /** Lista precios **/
-section.fondo-precios {
-    background-color: #eff5f5;
+section.programa .contenido-programa-planes .contenedor {
+  padding: 50px;
 }
-/* @media (min-width: 1024px) {
-  section.fondo-precios {
-    background-attachment: fixed;
+@media only screen and (max-width: 1024px) {
+  section.programa .contenido-programa-planes .contenedor {
+    padding: 10px;
   }
-} */
+}
+@media only screen and (max-width: 768px) {
+  section.programa .contenido-programa-planes .contenedor {
+    padding: 0;
+  }
+}
 ul {
   list-style: none;
   margin: 0;
@@ -1823,14 +1827,6 @@ ul.lista-precios li h3.desarrolloMovil{
   }
 }
 
-/* div.tabla-precio {
-  border: 1px solid orangered;
-  padding: 40px 40px 40px 20px;
-  text-align: center;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  background-color: #ffffff;
-} */
 div.tabla-precio {
   border: 1px solid orangered;
   padding: 40px 40px 40px 20px;
@@ -1868,9 +1864,8 @@ div.tabla-precio p.numero {
   margin: 10px;
   font-weight: bold;
   font-size: 30px;
-  /* text-shadow: 2px 2px 3px #fe4918; */
-  /* text-shadow: 0 0 3px #fe4918; */
 }
+
 div.tabla-precio p.aBk {
   font-size: 14px;
     cursor: pointer;
@@ -1884,22 +1879,24 @@ h2.nuestros-precios {
   color: #1dc8cd;
   text-align: center;
   font-weight: bold;
-  /* text-shadow: 0 0 10px black; */
   text-shadow: 2px 2px 3px black;
   letter-spacing: 5px;
 }
+
 h2.precio-web {
   font-size: 25px;
   color: #627d7e;
   text-align: center;
   font-weight: bold;
 }
+
 h2.desarrollo {
   padding-top: 30px;
   color: white;
   letter-spacing: 5px;
   text-shadow: 2px 2px 3px black;
 }
+
 span.section-divider {
   display: block;
   width: 60px;
@@ -1942,9 +1939,9 @@ div.tabla-precio ul li.no:before {
 }
 
 .button {
-  background-color: #fe4918;
+  background-color: transparent;
   padding: 10px 40px;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
@@ -1954,7 +1951,11 @@ div.tabla-precio ul li.no:before {
   display: inline-block;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  border: 2px solid #fe4918;
+  border: 2px solid white;
+}
+.button:hover {
+  background-color: #1dc8cd;
+  color: white;
 }
 div.tabla-precio:hover {
   -webkit-transform: scale(1.1);
@@ -1966,33 +1967,6 @@ div.tabla-precio:hover {
 .tabla-precio .button:hover {
   color: #fe4918;
   background-color: white;
-}
-
-/* Precios Móvil */
-section.fondo-precios2 {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/fondo/fondoPrecios2.jpg) center top no-repeat;
-  background-size: cover;
-  position: relative;
-}
-@media (min-width: 1024px) {
-  section.fondo-precios2 {
-    background-attachment: fixed;
-  }
-}
-/* Precios Hosting & Dominio */
-section.fondo-precios3 {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/fondo/fondoPrecios3.jpg) center top no-repeat;
-  background-size: cover;
-  position: relative;
-}
-@media (min-width: 1024px) {
-  section.fondo-precios3 {
-    background-attachment: fixed;
-  }
 }
 
 /* Btn Whatsapp */
