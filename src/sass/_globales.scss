@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: white;
+    color: #666666;
+    font-family: 'Oswald', sans-serif, Comic;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #1dc8cd;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: #1dc9ce;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif, Comic;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  
+  /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+  /*
+   * What follows is the result of much research on cross-browser styling.
+   * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+   * Kroc Camen, and the H5BP dev community and team.
+   */
+  /* ==========================================================================
+     Base styles: opinionated defaults
+     ========================================================================== */
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * These selection rule sets have to be separate.
+   * Customize the background color to match your design.
+   */
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  /** Globales **/
+  .contenedor {
+    width: 98%;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .contenedor {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .contenedor {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .contenedor {
+      width: 90%;
+      max-width: 1100px;
+    }
+  }
+  .seccion {
+    padding: 30px 0;
+  }
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background-color: #1dc8cd;
+    color: white;
+    width:55px;
+      height:55px;
+    border-radius: 50px;
+    right: 2%;
+    bottom: 5%;
+    -webkit-transition: none;
+    transition: none;
+    text-align:center;
+    font-size: 32px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+  
+  .back-to-top:focus {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background-color: white;
+    color: #1dc8cd;
+    border: 1px solid #1dc8cd;
+  }

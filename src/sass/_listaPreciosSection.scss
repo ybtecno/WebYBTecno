@@ -1,0 +1,179 @@
+/** Lista precios **/
+section.programa .contenido-programa-planes .contenedor {
+    padding: 10px;
+  }
+  @media only screen and (max-width: 1024px) {
+    section.programa .contenido-programa-planes .contenedor {
+      padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    section.programa .contenido-programa-planes .contenedor {
+      padding: 0;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.lista-precios > li {
+    padding: 10px;
+    list-style: none;
+  }
+  
+  ul.lista-precios li h3.desarrolloMovil{
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    ul.lista-precios > li {
+      float: left;
+      width: 33.3%;
+    }
+  }
+  
+  div.tabla-precio {
+    border: 1px solid orangered;
+    padding: 40px 40px 40px 20px;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    background-color: #ffffff;
+  }
+  
+  div.tabla-precio ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 40px;
+  }
+  
+  div.tabla-precio h3 {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #1dc9ce;
+    font-weight: bold;
+  }
+  div.tabla-precio h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: none;
+    font-weight: normal;
+  }
+  
+  div.tabla-precio p.numero {
+    color: #fe4918;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  div.tabla-precio p.aBk {
+    font-size: 14px;
+      cursor: pointer;
+      color: #0099ff;
+      margin-top: 20px;
+  }
+  
+  h2.nuestros-precios {
+    padding-top: 30px;
+    font-size: 32px;
+    color: #1dc8cd;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    letter-spacing: 5px;
+  }
+  
+  h2.precio-web {
+    font-size: 25px;
+    color: #627d7e;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  h2.desarrollo {
+    padding-top: 30px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  span.section-divider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1dc8cd;
+    background: -webkit-gradient(linear, left bottom, left top, from(#1dc8cd), to(#55fabe));
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  div.tabla-precio ul li {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: black;
+      line-height: 30px;
+      text-align: left;
+  }
+  
+  div.tabla-precio ul li:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+  }
+  div.tabla-precio ul li.no:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: red;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00d';
+  }
+  
+  .button {
+    background-color: #fe4918;
+    padding: 10px 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 2px solid #fe4918;
+    
+  
+  }
+  .button:hover {
+    background-color: #1dc8cd;
+    color: white;
+  }
+  div.tabla-precio:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border: 1px solid #fe4918;
+    -webkit-box-shadow: 0px 0px 50px #666;
+            box-shadow: 0px 0px 50px #666;
+  }
+  .tabla-precio .button:hover {
+    color: #fe4918;
+    background-color: white;
+  }

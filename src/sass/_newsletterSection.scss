@@ -1,0 +1,36 @@
+/*** Newsletter:   **/
+div.newsletter {
+    position: relative;
+    height: auto;
+  }
+  div.newsletter::before {
+    background-image: url(../../img/fondo/bg-newsletter.jpg);
+    content: '';
+  }
+  div.newsletter .contenido {
+    padding: 100px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  div.newsletter .contenido p {
+    font-size: 1.2em;
+    text-transform: lowercase;
+  }
+  div.newsletter .contenido h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 7vw;
+    
+    font-family: 'Oswald', sans-serif, Comic;
+  }
+  
+  .parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
